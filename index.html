@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>სარეგისტრაციო ფორმა</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>სარეგისტრაციო ფორმა</h2>
+      <form>
+        <label for="name">სახელი:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="შეიყვანე შენი სახელი" />
+
+        <label for="email">ელ-ფოსტა:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="შეიყვანე შენი ელ-ფოსტა" />
+
+        <label for="password">პაროლი:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="შეიყვანე პაროლი" />
+
+        <label>სქესი:</label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="gender" value="male" />
+            მამრობითი
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female" />
+            მდედრობითი
+          </label>
+        </div>
+
+        <label>ჰობი:</label>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" name="hobbies" value="sports" />
+            სპორტი
+          </label>
+          <label>
+            <input type="checkbox" name="hobbies" value="music" />
+            მუსიკა
+          </label>
+          <label>
+            <input type="checkbox" name="hobbies" value="reading" />
+            კითხვა
+          </label>
+        </div>
+
+        <label for="country">ქვეყანა</label>
+        <select id="country" name="country">
+          <option value="">აირჩიეთ ქვეყანა</option>
+          <option value="georgia">საქართველო</option>
+          <option value="usa">ამერიკა</option>
+          <option value="germany">გერმანია</option>
+          <option value="france">საფრანგეთი</option>
+        </select>
+
+        <label for="bio">ბიოგრაფია:</label>
+        <textarea
+          id="bio"
+          name="bio"
+          rows="4"
+          placeholder="მოკლედ მოგვიყევით თქვენს შესახებ"></textarea>
+        <input type="submit" value="რეგისტრაცია" />
+      </form>
+      <p>
+        უკვე გაქვთ ანგარიში?
+        <a href="#"> შესვლა</a>
+      </p>
+    </div>
+  </body>
+</html>
